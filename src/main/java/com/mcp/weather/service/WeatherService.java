@@ -1,6 +1,6 @@
 package com.mcp.weather.service;
 
-import com.dnt.dntmcp.dto.WeatherResponse;
+import com.mcp.weather.dto.WeatherResponse;
 import com.mcp.weather.dto.props.WeatherApiProperties;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

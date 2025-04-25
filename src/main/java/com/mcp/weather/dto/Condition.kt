@@ -1,4 +1,4 @@
-package com.dnt.dntmcp.dto
+package com.mcp.weather.dto
 
 data class Condition(
     val code: Int,

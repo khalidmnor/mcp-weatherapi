@@ -1,4 +1,6 @@
-package com.dnt.dntmcp.dto
+package com.mcp.weather.dto
+
+import com.mcp.weather.dto.Condition
 
 data class Current(
     val cloud: Int,
