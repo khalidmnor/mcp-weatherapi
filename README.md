@@ -1,19 +1,46 @@
-# Getting Started
+# Weather Service Application
 
-### Reference Documentation
+This project is a Spring Boot application that provides weather information by city name using a REST API.
 
-For further reference, please consider the following sections:
+## Features
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/3.4.5/maven-plugin)
-* [Create an OCI image](https://docs.spring.io/spring-boot/3.4.5/maven-plugin/build-image.html)
-* [Model Context Protocol Server](https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html)
+- Fetch current weather details for a given city.
+- Built with Java and Kotlin.
+- Uses Spring Boot for application development.
+- Reactive WebClient for API calls.
+- Configurable API properties.
+- Logs weather information for debugging purposes.
+- Supports JSON responses for easy integration.
+- Modular design with DTOs for clean data handling.
 
-### Maven Parent overrides
+## Technologies Used
 
-Due to Maven's design, elements are inherited from the parent POM to the project POM.
-While most of the inheritance is fine, it also inherits unwanted elements like `<license>` and `<developers>` from the
-parent.
-To prevent this, the project POM contains empty overrides for these elements.
-If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
+- **Java 21**
+- **Kotlin**
+- **Spring Boot 3.4.5**
+- **Maven**
+- **Lombok**
+- **WebClient**
 
+## Getting Started
+
+### Prerequisites
+
+- Java 21 or higher
+- Maven 3.8 or higher
+
+### Configuration
+  The application requires API properties to be configured in application.yml 
+  or application.properties. 
+  Below is an example configuration:
+  ```bash
+  weather-api:
+  base-url: https://api.weatherapi.com/v1
+  endpoint: /current.json
+  api-key: YOUR_API_KEY
+  ```
+  Replace YOUR_API_KEY with your actual API key.
+
+
+### API Endpoints
+ - GET /weather?city={cityName}: Fetches the current weather for the specified city.
